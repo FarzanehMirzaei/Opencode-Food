@@ -4,26 +4,37 @@
     <title>OpenCode - Food</title>
     <link href="./styles.css" rel="stylesheet">
 </head>
-<body class="font-mono text-gray-700">
+<body class="font-mono text-gray-500">
 
-<div><!-- Start Wrapper --> 
-<div><!-- Start Nav -->
-<div>
-    <h1 class="font-bold uppercase p-4 border-b border-gray-200">
-        <a href="#">OpenCode Food</a>
+<div class="grid md:grid-cols-4 gap-0"><!-- Start Wrapper --> 
+<div class="md:col-span-1 md:flex md:justify-end bg-gray-100"><!-- Start Nav -->
+<nav class="text-right">
+<div class="flex justify-between items-center">
+    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+        <a class="hover:text-gray-700" href="#">OpenCode Food</a>
     </h1>
-    <ul>
-        <li class="text-gray-700 font-bold"><a href="#"><span>Home</span></a></li>
-        <li><a href="#"><span>About</span></a></li>
-        <li><a href="#"><span>Contact</span></a></li>
-    </ul>
+    <div class="px-4 cursor-pointer md:hidden" id="burger">
+
+    </div>
 </div>
+    <ul class="text-sm mt-6 hidden md:block" id="menu">
+        <li class="text-gray-700 font-bold py-1">
+            <a class="flex justify-end px-4 border-r-4 border-primary" href="#"><span>Home</span>
+            </a></li>
+        <li class="py-1">
+            <a class="flex justify-end px-4 border-r-4 border-x-white" href="#"><span>About</span>
+            </a></li>
+        <li>
+            <a class="flex justify-end px-4 border-r-4 border-x-white" href="#"><span>Contact</span>
+            </a></li>
+    </ul>
+</nav>
 </div><!-- End Nav -->
 
-    <main class="px-16 py-6 bg-gray-100"><!-- Start Mai -->
+    <main class="px-16 py-10 bg-gray-50 md:col-span-3"><!-- Start Mai -->
 <div class="flex justify-center md:justify-end">
-    <a class="text-primary" href="#">Log in</a>
-    <a class="text-primary ml-2" href="#">Sign up</a>
+    <a class="btn log-up" href="#">Log in</a>
+    <a class="btn log-up ml-2" href="#">Sign up</a>
 </div>
 
 <header>
@@ -31,34 +42,97 @@
     <h3 class="text-2xl font-semibold pl-1">For Everyone</h3>
 </header>
 
-<div class="mt-8">
-    <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Latest Recipes</h4>
-    <div>
+
+
+<div>
+    <h4 class="tit">Latest Recipes</h4>
+    <div class="grid lg:grid-cols-3 gap-10 mt-8">
         <!-- Cards -->
-    <div class="bg-white rounded overflow-hidden shadow-md">
-        <img class="w-full h-36 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+    <div class="card hover:shadow-lg">
+        <img class="w-full h-48 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
         <div class="m-4">
             <span class="font-bold">Ghorme Sabzi</span>
             <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
         </div>
-        <div class="bg-secondary-100 text-secondary-200 uppercase font-bold text-xs rounded-full p-2 absolute ml-2 mt-2">
+        <div class="badge">
             <span>3 hours</span>
+        </div>
+    </div>
+     
+     <div class="card hover:shadow-lg">
+        <img class="w-full h-36 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+        <div class="m-4">
+            <span class="font-bold">Gheyme</span>
+            <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
+        </div>
+        <div class="badge">
+            <span>2 hours</span>
+        </div>
+    </div>
+ 
+     <div class="card hover:shadow-lg">
+        <img class="w-full h-36 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+        <div class="m-4">
+            <span class="font-bold">Kabab</span>
+            <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
+        </div>
+        <div class="badge">
+            <span>25 mins</span>
         </div>
     </div>
 </div>
 </div>
 
-<h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Most Populer</h4>
-<div class="mt-8">
-    <!-- Cards -->
+
+<div>
+<h4 class="tit">Most Populer</h4>
+    <div class="grid lg:grid-cols-3 gap-10 mt-8">
+        <!-- Cards -->
+    <div class="card hover:shadow-lg">
+        <img class="w-full h-48 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+        <div class="m-4">
+            <span class="font-bold">Ghorme Sabzi</span>
+            <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
+        </div>
+        <div class="badge">
+            <span>3 hours</span>
+        </div>
+    </div>
+     
+     <div class="card hover:shadow-lg">
+        <img class="w-full h-36 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+        <div class="m-4">
+            <span class="font-bold">Gheyme</span>
+            <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
+        </div>
+        <div class="badge">
+            <span>2 hours</span>
+        </div>
+    </div>
+ 
+     <div class="card hover:shadow-lg">
+        <img class="w-full h-36 sm:h-48 object-cover" src="../img/1.jpg" alt="image">
+        <div class="m-4">
+            <span class="font-bold">fsenjon</span>
+            <span class="block text-sm text-gray-300">Recipes By OpenCode</span>
+        </div>
+        <div class="badge">
+            <span>5 hours</span>
+        </div>
+    </div>
+</div>
 </div>
 
+
+
 <div class="flex justify-center">
-    <div class="bg-secondary-100 text-secondary-200">Load More</div>
+    <div class="loadm">Load More</div>
 </div>
 
     </main><!-- End Mai -->
 </div><!-- End Wrapper -->
+
+<script src="index.js"></script>
 
 </body>
 </html>
